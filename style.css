@@ -1,0 +1,303 @@
+/* ====== Global Styles ====== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====== Header & Navigation ====== */
+
+.header {
+  background-color: #007bff; /* Primary color */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.nav-logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  background-color: #0056b3; /* Darker shade of primary */
+}
+
+/* ====== Main Content Containers ====== */
+
+main {
+  flex-grow: 1;
+  max-width: 1100px;
+  margin: 30px auto 50px auto;
+  padding: 0 20px;
+}
+
+/* ====== Headings ====== */
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+/* ====== Buttons ====== */
+
+button,
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* ====== Links ====== */
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Forms ====== */
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea styling */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* ====== Footer ====== */
+
+.footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* ====== Sections ====== */
+
+/* Hero section (e.g. on index.html) */
+.hero {
+  background: linear-gradient(135deg, #007bff 0%, black 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero .search-bar {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+}
+
+.hero .search-bar input[type="text"] {
+  flex: 1;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.hero .search-bar button {
+  padding: 15px 30px;
+  border-radius: 6px;
+}
+
+/* ====== Responsive ====== */
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    margin: 20px 15px 40px 15px;
+  }
+}
+.jobs-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.job-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.job-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+.form-container {
+  max-width: 500px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #007bff;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically if the section has height */
+  text-align: center;
+  min-height: 300px; /* or any height you want */
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center; /* centers logo and title horizontally */
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+
+
+
+

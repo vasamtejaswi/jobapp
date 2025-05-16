@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JobFinder - Find Your Dream Job</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="JobFinder helps you find your dream job by browsing thousands of job listings from top companies and startups.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar nav-center">
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="logo-title">
+  <img src="assets/image.png" alt="JobFinder Logo" class="logo" />
+  <h1 class="hero-title">Find Your Dream Job Now</h1>
+</div>
+
+
+    <!-- Search Box -->
+    <form action="jobs.html" method="GET" class="search-bar">
+      <input type="text" placeholder="Search jobs..." name="query" />
+      <button type="submit" class="button">Search</button>
+    </form>
+
+    <p style="margin-top: 20px;">
+      Browse thousands of jobs posted daily across all domains.
+    </p>
+  </section>
+
+  <!-- About Preview Section -->
+  <section>
+    <h2>Why Choose JobFinder?</h2>
+    <p>
+      JobFinder helps you discover jobs from top companies and startups. 
+      We simplify your job hunt and match you with the best roles.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 JobFinder. All rights reserved.</p>
+  </footer>
+  <!-- JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchBtn = document.querySelector('.button');
+    const searchInput = document.querySelector('.search-bar input');
+
+    searchBtn.addEventListener('click', function () {
+      const keyword = searchInput.value.trim();
+      if (keyword === '') {
+        alert('Please enter a keyword to search.');
+      } else {
+        alert(`You searched for: ${keyword}`);
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
